@@ -1,0 +1,16 @@
+body {
+    font-family: "Barlow Condensed", "Barlow", sans-serif;
+}
+
+.main-container {
+    padding: 100px 10px;
+}
+
+.main-image-container {
+    gap: 20px;
+}
+
+.main-image-container img {
+    max-height: 85px;
+    max-width: 250px;
+}
