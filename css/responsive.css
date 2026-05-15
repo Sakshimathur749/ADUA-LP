@@ -1,0 +1,95 @@
+@media (max-width:991px) {
+    .feature-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 767px) {
+    .main-image-container img {
+        max-height: 65px;
+        max-width: 180px;
+    }
+
+    .feature-item {
+        min-height: 300px;
+    }
+
+    .ls-md-4 {
+        letter-spacing: 4px !important;
+    }
+
+    .footer-container {
+        gap: 16px;
+    }
+
+    .main-container,
+    .footer-py {
+        padding: 40px 10px;
+    }
+
+    .main-head,
+    .programs-head-container h2,
+    .student-head-container h2 {
+        font-size: 50px;
+        line-height: 56px;
+    }
+
+    .course-container h2,
+    .airline-head-container h2 {
+        font-size: 36px;
+        line-height: 40px;
+    }
+
+    .course-container h4,
+    .footer-head,
+    .student-head-container h5 {
+        font-size: 28px;
+        line-height: 32px;
+    }
+
+    .airline-right h5,
+    .feature-content h2 {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .main-subhead,
+    .form-header h2,
+    .airline-right p {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .btn-apply,
+    .footer-contact,
+    .footer-copyright,
+    .course-para,
+    .find-btn,
+    .airline-right p {
+        font-size: 16px;
+        line-height: 19.2px;
+    }
+
+    .main-para,
+    .footer-mediagarh {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .student-head-container p {
+        max-width: 300px;
+    }
+
+    .feature-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .line,
+    .line-end {
+        width: 140px;
+    }
+
+    .find-btn {
+        padding: 10px 30px;
+    }
+}
