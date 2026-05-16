@@ -29,7 +29,9 @@
 
     .main-head,
     .programs-head-container h2,
-    .student-head-container h2 {
+    .student-head-container h2,
+    .career-container h2,
+    .apply-head {
         font-size: 50px;
         line-height: 56px;
     }
@@ -55,23 +57,32 @@
 
     .main-subhead,
     .form-header h2,
-    .airline-right p {
+    .find-btn,
+    .airline-right p,
+    .career-point li,
+    .career-badge,
+    .btn-white {
         font-size: 18px;
         line-height: 24px;
     }
 
-    .btn-apply,
     .footer-contact,
+    .btn-apply,
     .footer-copyright,
     .course-para,
-    .find-btn,
-    .airline-right p {
+    .programs-head-container p,
+    .btn-gold,
+    .slide-text,
+    .arrow-card {
         font-size: 16px;
         line-height: 19.2px;
     }
 
     .main-para,
-    .footer-mediagarh {
+    .footer-mediagarh,
+    .journey-btn,
+    .desc-text,
+    .btn-tag {
         font-size: 14px;
         line-height: 24px;
     }

@@ -2,6 +2,11 @@ body {
     font-family: "Barlow Condensed", "Barlow", sans-serif;
 }
 
+@font-face {
+    font-family: Consolas;
+    src: url('../font/consolas.ttf');
+}
+
 .color-1 {
     color: #F5B800 !important;
 }
@@ -62,6 +67,10 @@ body {
     color: #737373 !important;
 }
 
+.color-16 {
+    color: #262626 !important;
+}
+
 .w-fit {
     width: fit-content !important;
 }
@@ -102,6 +111,22 @@ body {
     background: #101636 !important;
 }
 
+.bg-10 {
+    background: #FAFAFA !important;
+}
+
+.bg-11 {
+    background: #f2f2f2 !important;
+}
+
+.bg-linear-2 {
+    background: rgba(13, 37, 168, 0.30) !important;
+}
+
+.gap-30 {
+    gap: 30px !important;
+}
+
 .font-barlow {
     font-family: "Barlow Condensed" !important;
 }
@@ -120,6 +145,10 @@ body {
 
 .font-inter {
     font-family: "Inter", sans-serif !important;
+}
+
+.font-consolas {
+    font-family: Consolas !important;
 }
 
 .fw-700 {
@@ -142,6 +171,10 @@ body {
     letter-spacing: 1px !important;
 }
 
+.ls--1 {
+    letter-spacing: -1.2px !important;
+}
+
 .ls-2 {
     letter-spacing: 2px !important;
 }
@@ -160,6 +193,10 @@ body {
 
 .ls-7 {
     letter-spacing: 7px !important;
+}
+
+.lh-normal {
+    line-height: normal !important;
 }
 
 .border-radius-8 {
@@ -218,7 +255,8 @@ body {
 }
 
 .main-badge p,
-.secure-text {
+.secure-text,
+.program-subtitle {
     font-size: 12px;
     line-height: 20px;
 }
@@ -226,7 +264,8 @@ body {
 .main-head,
 .programs-head-container h2,
 .student-head-container h2,
-.career-container h2 {
+.career-container h2,
+.apply-head {
     font-size: 84px;
     line-height: 84px;
 }
@@ -242,16 +281,23 @@ body {
 .form-header h2,
 .find-btn,
 .airline-right p,
-.career-point li {
+.career-point li,
+.quote-box,
+.confused-list {
     font-size: 20px;
     line-height: 28px;
 }
 
 .main-para,
 .footer-mediagarh,
-.journey-btn {
+.journey-btn,
+.desc-text,
+.btn-tag,
+.arrow-card,
+.program-title,
+.btn-consult {
     font-size: 16px;
-    line-height: 30px;
+    line-height: 28px;
 }
 
 .list-item,
@@ -260,9 +306,16 @@ body {
 .custom-input,
 .student-head-container p,
 .career-para,
-.career-bottom-para {
+.career-bottom-para,
+.sub-text,
+.program-list li,
+.feature-desc {
     font-size: 14px;
     line-height: 21px;
+}
+
+.program-list li::marker {
+    color: #FFCC00;
 }
 
 .form-card {
@@ -285,13 +338,21 @@ body {
 .btn-apply,
 .footer-copyright,
 .course-para,
-.programs-head-container p {
+.programs-head-container p,
+.btn-gold,
+.slide-text,
+.feature-title {
     font-size: 18px;
     line-height: 21.6px;
 }
 
 .find-btn {
-    border-radius: 10px 10px 9723482374px 9723482374px;
+    clip-path: polygon(0 0,
+            calc(100% - 22px) 0,
+            100% 50%,
+            calc(100% - 22px) 100%,
+            0 100%,
+            22px 50%);
     padding: 18px 60px;
 }
 
@@ -329,7 +390,8 @@ body {
 
 .course-container h4,
 .airline-head-container h2,
-.student-head-container h5 {
+.student-head-container h5,
+.program-tag {
     font-size: 48px
 }
 
@@ -352,7 +414,8 @@ body {
 }
 
 .airline-right h5,
-.feature-content h2 {
+.feature-content h2,
+.main-heading {
     font-size: 28px;
     line-height: 29px;
 }
@@ -363,6 +426,10 @@ body {
 .diploma-span {
     width: 100px;
     height: 4px;
+}
+
+.w-100px {
+    width: 100px !important;
 }
 
 /* Diploma Programs */
@@ -406,9 +473,13 @@ body {
     width: 100%;
 }
 
-.career-badge {
+.career-badge,
+.btn-white {
     font-size: 24px;
     line-height: 30px;
+}
+
+.career-badge {
     background: rgba(255, 255, 255, 0.30);
 }
 
@@ -452,147 +523,198 @@ body {
     padding-left: 10px;
 }
 
-.why-adua-strip {
-    background-color: var(--gold);
-    padding: 15px 0;
-    color: var(--navy);
-    border-bottom: 2px solid #000;
-}
-
-.carousel-item-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    font-weight: 700;
-    text-transform: uppercase;
-    font-size: 0.9rem;
-    white-space: nowrap;
-}
-
-.carousel-item-content i {
-    background: var(--navy);
-    color: var(--gold);
-    width: 30px;
-    height: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    font-size: 0.8rem;
-}
-
-/* --- Hero Section --- */
-
-.hero-section {
-    position: relative;
-    min-height: 90vh;
-    display: flex;
-    align-items: center;
-    padding: 50px 0;
-}
-
-.hero-text h6 {
-    color: var(--gold);
-    letter-spacing: 3px;
-    font-size: 0.7rem;
-    font-weight: 600;
-    margin-bottom: 20px;
-}
-
-.hero-text h1 {
-    font-family: 'Barlow Condensed', sans-serif;
-    font-size: clamp(2.5rem, 6vw, 4.5rem);
-    font-weight: 800;
-    line-height: 0.9;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-}
-
-.hero-text h1 span {
-    color: var(--gold);
-}
-
-.desc-text {
-    font-size: 0.9rem;
-    color: #a0a0a0;
-    max-width: 450px;
-    margin-bottom: 30px;
-}
-
 /* Buttons */
 .btn-tag {
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    color: #ccc;
-    font-size: 0.7rem;
-    padding: 8px 15px;
-    text-transform: uppercase;
-    display: block;
-    width: fit-content;
-    margin-bottom: 10px;
-    letter-spacing: 1px;
+    border-radius: 4.377px;
+    border: 1.094px solid rgba(255, 204, 0, 0.30);
+    background: rgba(255, 204, 0, 0.10);
+    padding: 8px 16px;
+    color: rgba(255, 255, 255, 0.80);
+
 }
 
 .btn-gold {
-    background-color: var(--gold);
-    color: var(--navy);
-    font-weight: 700;
-    padding: 12px 30px;
-    border-radius: 8px;
-    text-transform: uppercase;
-    border: none;
-    margin-top: 20px;
-    font-size: 0.9rem;
+    border-radius: 0 24px 0 0;
+    padding: 18px 36px;
 }
 
 .btn-white {
-    background: #fff;
-    color: var(--navy);
-    font-weight: 700;
-    padding: 12px 30px;
-    border-radius: 8px;
-    text-transform: uppercase;
-    margin-top: 15px;
-    display: inline-block;
-    text-decoration: none;
-    font-size: 0.9rem;
+    padding: 20px;
 }
 
-/* --- Slanted Image Gallery --- */
+.btn-white img {
+    max-width: 24px;
+    max-height: 24px;
+}
+
 .slanted-gallery {
-    display: flex;
-    height: 100%;
-    gap: 15px;
+    gap: 10px;
     padding-left: 20px;
 }
 
 .gallery-item {
     flex: 1;
     height: 550px;
-    overflow: hidden;
     transform: skewX(10deg);
-    border: 4px solid var(--navy);
     box-shadow: 10px 0 30px rgba(0, 0, 0, 0.5);
-    position: relative;
+}
+
+.air-gallery-items img {
+    transform: skewX(10deg) translateX(-17%);
 }
 
 .gallery-item img {
     width: 150%;
-    height: 100%;
-    object-fit: cover;
-    transform: skewX(10deg) translateX(-17%);
     transition: 0.5s ease;
 }
 
 .gallery-item:hover img {
-    transform: skewX(10deg) translateX(-10%) scale(1.1);
+    transform: scale(1.1);
 }
 
-.gallery-item.highlight {
+.gallery-item.highlight,
+.program-card.highlight {
     border-left: 6px solid #FFCC00;
 }
 
+.whyadua-container {
+    padding: 40px 10px;
+}
+
+.adua-marquee-carousel .owl-stage {
+    display: flex;
+}
+
+.adua-marquee-carousel .owl-item {
+    flex-shrink: 0;
+}
+
+.icon-circle {
+    width: 48px;
+    height: 48px;
+}
+
+.slider-heading {
+    font-size: 30px;
+    line-height: 36px;
+}
+
+.h-6 {
+    height: 6px !important;
+}
+
+.arrow-card {
+    position: absolute;
+    z-index: 2;
+    padding: 20px 12px;
+    top: 15%;
+    max-width: 180px !important;
+    width: 100%;
+    transform: translateX(-12px);
+}
+
+.arrow-bg {
+    width: 250px;
+}
+
+.arrow-container {
+    height: 100px;
+}
+
+.quote-box {
+    border-radius: 12px;
+    border: 1px dashed rgba(255, 204, 0, 0.30);
+    background: rgba(13, 37, 168, 0.05);
+    padding: 20px;
+    margin-top: 30px;
+}
+
+/* Section 2: Slider Styling */
+.program-card {
+    max-width: 1100px;
+}
+
+.card-img-block {
+    max-height: 460px;
+    aspect-ratio: 248/249;
+    height: 100%;
+}
+
+.program-right:nth-child(odd) {
+    border-right: 8px solid #FC0;
+    margin-right: -20px;
+}
+
+/* Even Items */
+.program-right:nth-child(even) {
+    border-left: 8px solid #FC0;
+    margin-left: -20px;
+}
+
+.program-right {
+    background: #FFF;
+    box-shadow: 0 20px 50px 0 rgba(0, 0, 0, 0.10);
+    backdrop-filter: blur(6px);
+    padding: 40px 50px;
+
+    max-height: 600px;
+    min-height: 500px;
+}
+
+.icon-confused {
+    width: 8px;
+    height: 8px;
+    flex-shrink: 0;
+}
+
+.consultor-left {
+    max-width: 500px;
+}
+
+.card-box {
+    border: 1px solid #F5F5F5;
+    background: rgba(13, 37, 168, 0.03);
+    max-width: 600px;
+    padding: 40px;
+    padding: 38px 36px 32px 36px;
+}
+
+.main-heading {
+    border-bottom: 0.8px solid #E5E5E5;
+}
+
+.feature-item-2 {
+    gap: 18px;
+    margin-bottom: 28px;
+}
+
+.step-circle {
+    width: 42px;
+    height: 42px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.10), 0 4px 6px -4px rgba(0, 0, 0, 0.10);
+}
+
+.feature-body {
+    padding-top: 2px;
+}
+
+/* ── Buttons ── */
+.btn-row {
+    border-top: 0.8px solid #E5E5E5;
+}
+
+.btn-consult {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.10), 0 8px 10px -6px rgba(0, 0, 0, 0.10);
+    padding: 24px 30px;
+
+}
+
+/* divider between buttons */
+.btn-divider {
+    width: 2px;
+    background: #1a2d8f;
+    flex-shrink: 0;
+}
 
 /* Footer */
 .footer-py {

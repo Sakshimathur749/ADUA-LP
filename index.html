@@ -12,6 +12,7 @@
         rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
@@ -129,7 +130,7 @@
                                                 *</label>
                                             <select class="form-select custom-input font-figtree fw-400 color-7"
                                                 required>
-                                                <option value="" selected disabled></option>
+                                                <option value="" selected disabled> Select Course</option>
                                                 <option value="hotel-mgmt">Hotel Management</option>
                                                 <option value="culinary">Culinary Arts</option>
                                             </select>
@@ -209,58 +210,125 @@
         </div>
     </section>
 
-    <!-- <section class="carousel-section">
-        <div class="container main-container">
-            <div class="row">
-                <div class="col-12">
-                    <div
-                        class="programs-head-container d-flex flex-column align-items-center justify-content-center text-center gap-3">
-                        <div
-                            class="d-flex gap-3 align-items-center justify-content-center programs-badge color-12 w-fit text-center font-Barlow text-uppercase ls-3 fw-600">
-                            <div><img src="./assets/SVG.svg" alt=""></div>
-                            ADUA Excellence
-                        </div>
-                        <div class="d-flex flex-column align-items-center justify-content-center gap-1 mb-2">
-                            <h2 class="text-center font-barlow fw-700 text-uppercase color-12">DIPLOMA PROGRAMS</h2>
-                            <div class="bg-4 diploma-span"></div>
-                        </div>
-                        <p class="text-center font-Barlow text-uppercase ls-3 fw-400 color-15">Professional Aviation
-                            Pathways</p>
-                    </div>
-                </div>
-                <div class="col-12">
-                    <div class="carousel-outer position-relative d-flex align-items-center justify-content-center">
-                        <button class="arrow-btn  bg-transparent m-0 border-0" id="prevBtn" aria-label="Previous"> <img
-                                src="./assets/left-arrow.svg" class="h-100 w-100 object-fit-cover" alt=""></button>
-
-                        <div class="program-card row" id="programCard">
-
-                            <div class="col-12  card-img-col at-col1" id="imgCol">
-                                <img id="cardImg" src="" class="h-100 w-100 object-fit-cover" alt="" />
-                                <span class="img-label" id="imgLabel"></span>
-                            </div>
-
-                            <div class="col-12 col-md-6 card-content-col at-col2" id="contentCol">
-                                <div class="content-inner visible" id="contentInner">
-                                    <h2 id="contentTitle"></h2>
-                                    <p class="desc" id="contentDesc"></p>
-                                    <p class="des-label">Target Designations</p>
-                                    <ul class="des-list" id="contentRoles"></ul>
-                                    <a href="#" class="btn-course">Proceed to Course <i
-                                            class="bi bi-arrow-right"></i></a>
+    <section>
+        <div class="container-fluid">
+            <div class="container main-container">
+                <div class="row g-4">
+                    <div class="col-12">
+                        <div class=" d-flex flex-column gap-3">
+                            <div class="d-flex flex-column align-items-center justify-content-center gap-2">
+                                <div
+                                    class="d-flex gap-3 align-items-center justify-content-center airline-badge color-12 w-fit text-center font-Barlow text-uppercase ls-3 fw-600">
+                                    <div><img src="./assets/SVG.svg" alt=""></div>
+                                    ADUA Excellence
                                 </div>
+                                <h2 class="text-center font-barlow fw-600 text-uppercase color-12 apply-head">
+                                    DIPLOMA PROGRAMS
+                                </h2>
+                                <span class="bg-4 h-6 w-100px mx-auto border-radius-8"></span>
                             </div>
-
+                            <p class="sub-text color-15 text-center font-barlow fw-400 text-uppercase ls-4">Professional
+                                Aviation Pathways
+                            </p>
                         </div>
+                    </div>
+                    <div class="carousel-wrapper col-12 position-relative">
+                        <div class="outer-wrap ">
+                            <div id="diplomaCarousel" class="carousel slide" data-bs-ride="carousel"
+                                data-bs-interval="3500">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <div class="program-card row mx-auto align-items-center">
+                                            <div class="card-img-block d-flex align-items-end col-md-6">
+                                                <img src="./assets/Group_5.webp" alt="Airport Operations"
+                                                    class="h-100 w-100 object-fit-cover" />
+                                            </div>
+                                            <div
+                                                class="card-content col-md-6 highlight program-right d-flex flex-column gap-3">
+                                                <div
+                                                    class="program-tag color-12 text-uppercase fw-600 ls--1 font-barlow lh-normal">
+                                                    Airport Operations &
+                                                    Terminal Management</div>
+                                                <div class="program-title color-15 font-Barlow fst-italic fw-400 mb-3">
+                                                    "Learn
+                                                    how
+                                                    airports
+                                                    function behind
+                                                    the
+                                                    scenes — from
+                                                    terminal coordination to cargo and warehouse operations."</div>
+                                                <div
+                                                    class="program-subtitle color-12 text-uppercase ls-2 fw-700 font-barlow">
+                                                    Target
+                                                    Designations</div>
+                                                <ul class="program-list d-flex flex-column gap-2">
+                                                    <li class="font-Barlow fw-400 color-16">Airport Terminal Operations
+                                                        Executive
+                                                    </li>
+                                                    <li class="font-Barlow fw-400 color-16">Airport Warehouse
+                                                        Coordinator</li>
+                                                    <li class="font-Barlow fw-400 color-16">Airport Cargo Operations
+                                                        Assistant
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item active">
+                                        <div class="program-card row mx-auto align-items-center">
+                                            <div
+                                                class="card-content col-md-6 highlight program-right d-flex flex-column gap-3">
+                                                <div
+                                                    class="program-tag color-12 text-uppercase fw-600 ls--1 font-barlow lh-normal">
+                                                    Airport Operations &
+                                                    Terminal Management</div>
+                                                <div class="program-title color-15 font-Barlow fst-italic fw-400 mb-3">
+                                                    "Learn
+                                                    how
+                                                    airports
+                                                    function behind
+                                                    the
+                                                    scenes — from
+                                                    terminal coordination to cargo and warehouse operations."</div>
+                                                <div
+                                                    class="program-subtitle color-12 text-uppercase ls-2 fw-700 font-barlow">
+                                                    Target
+                                                    Designations</div>
+                                                <ul class="program-list d-flex flex-column gap-2">
+                                                    <li class="font-Barlow fw-400 color-16">Airport Terminal Operations
+                                                        Executive
+                                                    </li>
+                                                    <li class="font-Barlow fw-400 color-16">Airport Warehouse
+                                                        Coordinator</li>
+                                                    <li class="font-Barlow fw-400 color-16">Airport Cargo Operations
+                                                        Assistant
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="card-img-block d-flex align-items-end col-md-6">
+                                                <img src="./assets/Group_5.webp" alt="Airport Operations"
+                                                    class="h-100 w-100 object-fit-cover" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
 
-                        <button class="arrow-btn bg-transparent m-0 border-0" id="nextBtn" aria-label="Next"><img
-                                src="./assets/right-arrow.svg" class="h-100 w-100 object-fit-cover" alt=""></button>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#diplomaCarousel"
+                            data-bs-slide="prev">
+                            <img src="./assets/left-arrow.svg" class="opacity-100" alt="">
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#diplomaCarousel"
+                            data-bs-slide="next">
+                            <img src="./assets/right-arrow.svg" class="opacity-100" alt="">
+                        </button>
+
                     </div>
                 </div>
             </div>
-            <div class="carousel-dots" id="dotsEl"></div>
         </div>
-    </section> -->
+    </section>
 
     <section id="recruiters">
         <div class="container-fluid bg-5">
@@ -466,7 +534,7 @@
                             diploma
                             program,
                             opportunities can open across</p>
-                        <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
                             <ul class="list-unstyled d-flex flex-wrap gap-3 gap-md-4 career-point"
                                 style="max-width: 500px;">
                                 <li class="text-white opacity-75 fw-700 text-uppercase ls-1">Airports & Airlines</li>
@@ -541,90 +609,324 @@
             </div>
     </section>
 
-    <!-- <section id="consult">
-        <div class="container-fluid bg-8">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 col-md-6"></div>
-                    <div class="col-12 col-md-6"></div>
+    <section>
+        <div class="container-fluid bg-11">
+            <div class="container main-container">
+                <div class="row align-items-center">
+                    <div class="col-12 col-md-6">
+                        <div class="consultor-left d-flex flex-column gap-3">
+                            <div
+                                class="d-flex gap-2 align-items-center justify-content-center airline-badge color-12 w-fit text-center font-Barlow text-uppercase ls-3 fw-600">
+                                <div
+                                    class="icon-confused bg-2 rounded-circle d-flex align-items-center justify-content-center">
+                                </div>
+                                Discover Your Future
+                            </div>
+                            <h2 class="font-barlow fw-600 text-uppercase color-12 apply-head fst-italic">STILL
+                                <span class="color-11">CONFUSED? </span>START HERE.
+                            </h2>
+                            <ul class="list-unstyled d-flex flex-column gap-2">
+                                <li class="color-15 font-Barlow fst-italic fw-400 confused-list"><img
+                                        src="./assets/Background.svg" alt=""> A lot of students don't
+                                    have it all
+                                    figured
+                                    out on Day 1.</li>
+                                <li class="color-15 font-Barlow fst-italic fw-400 confused-list"><img
+                                        src="./assets/Background (1).svg" alt=""> That's actually the
+                                    best place to
+                                    start.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="card-box border-radius-8 d-flex flex-column gap-3">
+
+                            <div class="main-heading color-12 font-barlow fw-700 text-uppercase ls-3 pb-4">Here's The
+                                Good
+                                Part.</div>
+                            <div class="d-flex flex-column gap-4 py-4">
+                                <div class="feature-item-2 d-flex align-items-start">
+                                    <div
+                                        class="step-circle d-flex align-items-center justify-content-center px-3 py-2 bg-2 rounded-circle text-white fw-700 font-consolas">
+                                        01
+                                    </div>
+                                    <div class="feature-body">
+                                        <div class="feature-title color-12 font-barlow fw-700 text-uppercase ls-1">
+                                            Flexible
+                                            Learning</div>
+                                        <div class="feature-desc color-15 fw-400 font-Barlow ">
+                                            Whether you are curious about airport operations, customer roles, or drone
+                                            tech
+                                            — you don't need to lock everything in before starting.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Feature 02 -->
+                                <div class="feature-item-2 d-flex align-items-start">
+                                    <div
+                                        class="step-circle d-flex align-items-center justify-content-center px-3 py-2 bg-2 rounded-circle text-white fw-700 font-consolas">
+                                        02
+                                    </div>
+                                    <div class="feature-body">
+                                        <div class="feature-title color-12 font-barlow fw-700 text-uppercase ls-1">
+                                            Industry Pathways</div>
+                                        <div class="feature-desc color-15 fw-400 font-Barlow ">
+                                            Our diploma programs are designed as industry-specific
+                                            pathways. We help you explore and find exactly what fits
+                                            your interest.
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Feature 03 -->
+                                <div class="feature-item-2 d-flex align-items-start">
+                                    <div
+                                        class="step-circle d-flex align-items-center justify-content-center px-3 py-2 bg-2 rounded-circle text-white fw-700 font-consolas">
+                                        03
+                                    </div>
+                                    <div class="feature-body">
+                                        <div class="feature-title color-12 font-barlow fw-700 text-uppercase ls-1">
+                                            Discovery Phase</div>
+                                        <div class="feature-desc color-15 fw-400 font-Barlow ">
+                                            The first phase of our programs focuses on giving you
+                                            awareness across all sectors, from airlines to smart
+                                            infrastructure.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Buttons -->
+                            <div class="btn-row d-flex flex-wrap flex-md-nowrap gap-4 pt-4">
+                                <button
+                                    class="btn-consult bg-2 text-white text-center font-barlow fw-700 text-uppercase ls-3 w-100 border-0">Consult
+                                    Counselor</button>
+                                <button
+                                    class="btn-consult bg-white text-center font-barlow fw-700 text-uppercase ls-3 w-100 color-12 border-0">View
+                                    All Pathways</button>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <div class="why-adua-strip">
-        <div class="container-fluid">
-            <div id="textCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2500">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="carousel-item-content">
-                            <i>1</i> MULTIPLE CAREER ROLES PER PROGRAM
+    <section>
+        <div class="container-fluid bg-10">
+            <div class="container main-container ">
+                <div class="row d-flex flex-column gap-3">
+                    <div class="d-flex flex-column gap-2">
+                        <h2 class="text-center font-barlow fw-600 text-uppercase color-12 apply-head fst-italic">WHO CAN
+                            <span class="color-11">APPLY</span>
+                        </h2>
+                        <span class="bg-4 h-6 w-100px mx-auto border-radius-8"></span>
+                    </div>
+
+                    <p class="sub-text color-15 text-center font-barlow fw-400 text-uppercase ls-4">THESE PROGRAMS ARE
+                        IDEAL
+                        FOR:
+                    </p>
+                    <div class="row g-4 justify-content-center ">
+                        <div
+                            class="col-lg-3 col-md-6 arrow-container d-flex align-items-center justify-content-center position-relative">
+                            <div class="career-card p-2 w-100 h-100"
+                                style="background: url(./assets/Mask-Group.webp) center/contain no-repeat;">
+                                <div
+                                    class="arrow-card box-shadow-1 bg-white border-radius-8 color-12 font-barlow fw-700 text-uppercase ls-1 text-center">
+                                    12TH PASS STUDENTS
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-lg-3 col-md-6 arrow-container d-flex align-items-center justify-content-center position-relative">
+                            <div class="career-card p-2 w-100 h-100"
+                                style="background: url(./assets/Mask-Group-1.webp) center/contain no-repeat;">
+                                <div
+                                    class="arrow-card box-shadow-1 bg-white border-radius-8 color-12 font-barlow fw-700 text-uppercase ls-1 text-center">
+                                    GRADUATES
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-lg-3 col-md-6 arrow-container d-flex align-items-center justify-content-center position-relative">
+                            <div class="career-card p-2 w-100 h-100"
+                                style="background: url(./assets/Mask-Group-2.webp) center/contain no-repeat;">
+                                <div
+                                    class="arrow-card box-shadow-1 bg-white border-radius-8 color-12 font-barlow fw-700 text-uppercase ls-1 text-center">
+                                    AVIATION ENTHUSIASTS
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-lg-3 col-md-6 arrow-container d-flex align-items-center justify-content-center position-relative">
+                            <div class="career-card p-2 w-100 h-100"
+                                style="background: url(./assets/Mask-Group.webp) center/contain no-repeat;">
+                                <div
+                                    class="arrow-card box-shadow-1 bg-white border-radius-8 color-12 font-barlow fw-700 text-uppercase ls-1 text-center">
+                                    FUTURE TECH
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="carousel-item">
-                        <div class="carousel-item-content">
-                            <i>2</i> PRACTICAL & PROJECT-BASED LEARNING
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="carousel-item-content">
-                            <i>3</i> PLACEMENT ASSISTANCE
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="carousel-item-content">
-                            <i>4</i> STRUCTURED TRAINING MODULES
-                        </div>
+
+                    <div class="quote-box w-fit mx-auto color-12 text-center font-Barlow fst-italic fw-400 ">
+                        "No matter where you're starting from, the <b style="color:var(--primary-yellow)">right
+                            direction</b>
+                        makes
+                        a difference."
                     </div>
                 </div>
             </div>
         </div>
-    </div> -->
+    </section>
+
+    <section id="whyadua">
+        <div class="container-fluid bg-4 d-flex flex-column">
+            <div class="container whyadua-container ">
+                <div class="row align-items-center g-3">
+                    <div class="col-auto">
+                        <h5 class="color-12 font-barlow fst-italic fw-500 text-uppercase slider-heading ">WHY
+                            STUDENTS PREFER ADUA
+                        </h5>
+                    </div>
+                    <div class="col">
+                        <div class="w-100 h-1 bg-linear-2"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="owl-carousel adua-marquee-carousel mb-5">
+                <div class="slider-item d-flex gap-2 justify-content-center">
+                    <div class="icon-circle d-flex align-items-center justify-content-center">
+
+                        <img src="./assets/Background+Border.webp" class="h-100 w-100 object-fit-cover" alt="">
+                    </div>
+                    <span
+                        class="slide-text color-12 font-barlow text-uppercase ls-1 fw-700 d-flex align-items-center mb-3 ">Career-Oriented
+                        Diploma
+                        Programs</span>
+                </div>
+                <div class="slider-item d-flex gap-2  justify-content-center">
+                    <div class="icon-circle d-flex align-items-center justify-content-center">
+
+                        <img src="./assets/Background+Border-1.webp" class="h-100 w-100 object-fit-cover" alt="">
+                    </div>
+                    <span
+                        class="slide-text color-12 font-barlow text-uppercase ls-1 fw-700 d-flex align-items-center mb-3 ">Structured
+                        Training
+                        Approach</span>
+                </div>
+                <div class="slider-item d-flex gap-2  justify-content-center">
+                    <div class="icon-circle d-flex align-items-center justify-content-center">
+
+                        <img src="./assets/Background+Border-2.webp" class="h-100 w-100 object-fit-cover" alt="">
+                    </div>
+                    <span
+                        class="slide-text color-12 font-barlow text-uppercase ls-1 fw-700 d-flex align-items-center mb-3 ">Placement
+                        Assistance</span>
+                </div>
+                <div class="slider-item d-flex gap-2 justify-content-center">
+                    <div class="icon-circle d-flex align-items-center justify-content-center">
+
+                        <img src="./assets/Background+Border-3.webp" class="h-100 w-100 object-fit-cover" alt="">
+                    </div>
+                    <span
+                        class="slide-text color-12 font-barlow text-uppercase ls-1 fw-700 d-flex align-items-center mb-3 ">Practical
+                        &
+                        Project-Based
+                        Learning</span>
+                </div>
+                <div class="slider-item d-flex gap-2  justify-content-center">
+                    <div class="icon-circle d-flex align-items-center justify-content-center">
+
+                        <img src="./assets/Background+Border-2.webp" class="h-100 w-100 object-fit-cover" alt="">
+                    </div>
+                    <span
+                        class="slide-text color-12 font-barlow text-uppercase ls-1 fw-700 d-flex align-items-center mb-3 ">Multiple
+                        Career
+                        Roles Per
+                        Program</span>
+                </div>
+                <div class="slider-item d-flex gap-2  justify-content-center">
+                    <div class="icon-circle d-flex align-items-center justify-content-center">
+
+                        <img src="./assets/Background+Border-1.webp" class="h-100 w-100 object-fit-cover" alt="">
+                    </div>
+                    <span
+                        class="slide-text color-12 font-barlow text-uppercase ls-1 fw-700 d-flex align-items-center mb-3 ">Multiple
+                        Career
+                        Roles Per
+                        Program</span>
+                </div>
+                <div class="slider-item d-flex gap-2  justify-content-center">
+                    <div class="icon-circle d-flex align-items-center justify-content-center">
+
+                        <img src="./assets/Background+Border.webp" class="h-100 w-100 object-fit-cover" alt="">
+                    </div>
+                    <span
+                        class="slide-text color-12 font-barlow text-uppercase ls-1 fw-700 d-flex align-items-center mb-3 ">Aviation
+                        + Drone
+                        Industry
+                        Exposure</span>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <section class="container-fluid bg-9">
         <div class="container">
             <div class="row align-items-stretch">
-                <div class="col-lg-4 hero-text main-container d-flex">
-                    <div class="hero-text h-100">
-                        <h6 class="color-11 font-Barlow fw-600 text-uppercase ls-4">Future-Ready Enrollment</h6>
-                        <h2 class="text-white font-barlow fst-italic fw-600 text-uppercase step-head">YOUR CAREER
+                <div class="col-lg-4 main-container d-flex">
+                    <div class="hero-text h-100 d-flex flex-column gap-3">
+                        <h6 class="color-11 font-Barlow fw-600 text-uppercase ls-4 mb-2">Future-Ready Enrollment</h6>
+                        <h2 class="text-white font-barlow fst-italic fw-600 text-uppercase step-head mb-3">YOUR CAREER
                             <span class="color-11 "> WON'T BUILD</span>
                             ITSELF.
                         </h2>
 
-                        <div class="line-accent bg-transparent text-white font-Barlow fw-600">The First Step Starts
+                        <div class="line-accent bg-transparent text-white font-Barlow fw-600 mb-1">The First Step Starts
                             Here.</div>
 
-                        <p class="desc-text">
+                        <p class="desc-text text-white opacity-50 font-Barlow fw-400">
                             Start your journey with diploma programs designed for practical learning, industry exposure,
                             and
                             future-ready careers. The opportunities are real — start now.
                         </p>
 
-                        <div class="tags">
-                            <span class="btn-tag">The Industries are growing.</span>
-                            <span class="btn-tag">The Opportunities are real.</span>
-                            <span class="btn-tag">Right direction makes the difference.</span>
+                        <div class="tags d-flex flex-wrap gap-2 gap-md-3">
+                            <span class="btn-tag font-barlow fw-700 text-uppercase ls-1">The industries are
+                                growing.</span>
+                            <span class="btn-tag font-barlow fw-700 text-uppercase ls-1">The Opportunities are
+                                real.</span>
+                            <span class="btn-tag font-barlow fw-700 text-uppercase ls-1">Right direction makes the
+                                difference.</span>
                         </div>
 
-                        <button class="btn-gold">Admissions Open For 2025</button> <br>
-                        <a href="#" class="btn-white">Apply Now & Take The First Step ➔</a>
+                        <button
+                            class="btn-gold bg-4 align-items-center d-flex color-12 fw-700 text-uppercase ls-1 w-fit font-barlow">Admissions
+                            Open For
+                            2025</button>
+                        <a href="#"
+                            class="btn-white bg-white rounded-1 color-12 fw-700 text-uppercase fst-italic font-barlow text-decoration-none">Apply
+                            Now & Take
+                            The First Step <img src="./assets/SVG.webp" class="h-100 w-100 object-fit-cover ms-2"
+                                alt=""></a>
                     </div>
                 </div>
                 <div class="col-lg-8 d-flex">
-                    <div class="slanted-gallery h-100">
-                        <div class="gallery-item highlight h-100">
-                            <img src="../assets/image_2752.webp" alt="Pilot">
+                    <div class="slanted-gallery d-flex h-100">
+                        <div class="gallery-item overflow-hidden position-relative  highlight h-100">
+                            <img src="../assets/image_2752.webp" class="h-100 object-fit-cover" alt="Pilot">
                         </div>
-                        <div class="gallery-item h-100">
+                        <div class="gallery-item overflow-hidden position-relative h-100">
                             <video class="w-100 h-100 object-fit-cover" autoplay muted loop playsinline>
-
                                 <source src="./assets/video.mp4" type="video/mp4">
-
                             </video>
                         </div>
-                        <div class="gallery-item h-100">
-                            <img src="../assets/image_2754.webp" alt="Private Jet">
+                        <div class="gallery-item overflow-hidden position-relative  h-100">
+                            <img src="../assets/image_2754.webp" class="h-100 object-fit-cover" alt="Private Jet">
                         </div>
                     </div>
                 </div>
@@ -679,6 +981,41 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            $('.adua-marquee-carousel').owlCarousel({
+                loop: true,
+                margin: 20,
+                nav: false,
+                dots: false,
+                autoplay: true,
+                autoplayTimeout: 2000,
+                autoplaySpeed: 5000,
+                smartSpeed: 5000,
+                slideTransition: 'linear',
+
+                autoplayHoverPause: true,
+
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 2
+                    },
+                    1000: {
+                        items: 4
+                    }
+                }
+            });
+
+        });
+    </script>
+    </script>
     <script src="js/script.js"></script>
 </body>
 
