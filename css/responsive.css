@@ -5,9 +5,42 @@
 }
 
 @media (max-width: 767px) {
+    .gap-md-30 {
+        gap: 30px !important;
+    }
+
+    .py-md-40 {
+        padding: 40px 0px;
+    }
+
+    .program-right:nth-child(odd) {
+        border-right: none;
+        margin-right: 0px;
+    }
+
+    .program-right:nth-child(even) {
+        border-left: none;
+        margin-left: 0;
+    }
+
+    .card-img-block {
+        aspect-ratio: 1/1;
+        max-height: 300px;
+    }
+
     .main-image-container img {
         max-height: 65px;
         max-width: 180px;
+    }
+
+    .card-box {
+        padding: 28px;
+    }
+
+    .btn-consult,
+    .btn-applyNow,
+    .btn-admission {
+        padding: 10px;
     }
 
     .feature-item {
@@ -16,6 +49,10 @@
 
     .ls-md-4 {
         letter-spacing: 4px !important;
+    }
+
+    .ls-md-3 {
+        letter-spacing: 3px !important;
     }
 
     .footer-container {
@@ -31,9 +68,17 @@
     .programs-head-container h2,
     .student-head-container h2,
     .career-container h2,
-    .apply-head {
+    .apply-head,
+    .step-head,
+    .cta-num,
+    .hero__title,
+    .pathway-left h3 {
         font-size: 50px;
         line-height: 56px;
+    }
+
+    .cards-wrapper {
+        margin-top: -55px
     }
 
     .course-container h2,
@@ -44,24 +89,27 @@
 
     .course-container h4,
     .footer-head,
-    .student-head-container h5 {
+    .student-head-container h5,
+    .program-tag {
         font-size: 28px;
         line-height: 32px;
     }
 
     .airline-right h5,
-    .feature-content h2 {
+    .feature-content h2,
+    .main-heading,
+    .line-accent {
         font-size: 20px;
         line-height: 24px;
     }
 
     .main-subhead,
     .form-header h2,
-    .find-btn,
     .airline-right p,
-    .career-point li,
-    .career-badge,
-    .btn-white {
+    .quote-box,
+    .btn-white,
+    .cta-head,
+    .pathway-head {
         font-size: 18px;
         line-height: 24px;
     }
@@ -73,7 +121,14 @@
     .programs-head-container p,
     .btn-gold,
     .slide-text,
-    .arrow-card {
+    .arrow-card,
+    .feature-title,
+    .career-point li,
+    .find-btn,
+    .cta-para p,
+    .hero__subtitle,
+    .btn-hero,
+    .feature-card__title {
         font-size: 16px;
         line-height: 19.2px;
     }
@@ -82,7 +137,16 @@
     .footer-mediagarh,
     .journey-btn,
     .desc-text,
-    .btn-tag {
+    .btn-tag,
+    .program-title,
+    .btn-consult,
+    .career-badge,
+    .confused-list,
+    .btn-program,
+    .cta-card p,
+    .btn-admission,
+    .btn-applyNow,
+    .feature-card__text {
         font-size: 14px;
         line-height: 24px;
     }
@@ -91,7 +155,8 @@
         max-width: 300px;
     }
 
-    .feature-grid {
+    .feature-grid,
+    .contact-grid {
         grid-template-columns: repeat(1, 1fr);
     }
 
@@ -100,7 +165,57 @@
         width: 140px;
     }
 
-    .find-btn {
+    .find-btn,
+    .program-right,
+    .btn-hero,
+    .pathway-card {
         padding: 10px 30px;
+    }
+
+    .recruiter-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .arrow-card {
+        left: 15%;
+    }
+
+    .program-right {
+        min-height: 400px;
+    }
+
+    .cta-border {
+        max-width: 160px;
+    }
+
+    .gallery-item {
+        transform: none;
+        box-shadow: none;
+    }
+
+    .gallery-item.highlight {
+        border: none;
+    }
+
+    .slanted-gallery {
+        padding-left: 0px;
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .slanted-gallery .gallery-item:nth-child(1) {
+        order: 1;
+    }
+
+    /* Image 2 */
+    .slanted-gallery .gallery-item:nth-child(3) {
+        order: 2;
+    }
+
+    /* Video */
+    .slanted-gallery .gallery-item:nth-child(2) {
+        order: 3;
+        grid-column: span 2;
     }
 }

@@ -40,10 +40,10 @@
                                         Drone
                                         Technology</p>
                                 </div>
-                                <h1 class="text-white main-head text-uppercase font-barlow fw-700 ls-1 fst-italic">Build
+                                <h1 class="text-white main-head text-uppercase font-barlow fw-700 ls-1 ">Build
                                     A
                                     Career
-                                    <span>That
+                                    <span class="fst-italic">That
                                         Doesn't
                                         Stay</span>
                                     Stuck In One Place
@@ -52,6 +52,7 @@
                                     Drone Technology
                                     Diploma
                                     Programs</p>
+                                <div class="hero-span"></div>
                                 <p class="main-para font-Barlow fw-400 color-3">Some careers sit behind desks. <span
                                         class="color-4">These
                                         careers
@@ -94,6 +95,15 @@
                                         Multiple Career Pathways
                                     </li>
                                 </ul>
+                                <div class="d-flex  flex-md-row gap-3 gap-md-4">
+                                    <button
+                                        class="btn-admission d-flex gap-2 align-items-center font-barlow text-uppercase fw-700 text-white ls-1"><span></span>Admissions
+                                        Open — 2025
+                                        Intake</button>
+                                    <button
+                                        class="btn-applyNow text-black d-flex gap-2 align-items-center font-barlow text-uppercase fw-700 border-0 ls-1">Apply
+                                        Now <img src="./assets/Icon_1.svg" alt=""></button>
+                                </div>
                             </div>
                         </div>
                         <div class="col-12 col-md-6 d-flex align-items-center justify-content-center">
@@ -110,48 +120,57 @@
                                 </div>
 
                                 <div class="form-body pt-3 pt-md-5">
-                                    <form class="d-flex flex-column gap-3">
-                                        <div class="">
-                                            <label class="form-label font-figtree color-6 fw-600">Full Name *</label>
-                                            <input type="text"
-                                                class="form-control custom-input font-figtree fw-400 color-7"
-                                                placeholder="Enter your full name" required>
-                                        </div>
+                                    <div id="AdmissionForm" class="fail__lead-form-panel"
+                                        aria-labelledby="fail-lead-form-title">
 
-                                        <div class="">
-                                            <label class="form-label font-figtree color-6 fw-600">Phone Number *</label>
-                                            <input type="tel"
-                                                class="form-control custom-input font-figtree fw-400 color-7"
-                                                placeholder="+91 00000 00000" required>
-                                        </div>
+                                        <form class="d-flex flex-column gap-3" data-apply-form>
+                                            <div class="">
+                                                <label class="form-label font-figtree color-6 fw-600">Full Name
+                                                    *</label>
+                                                <input type="text" name="name" type="text" autocomplete="name"
+                                                    class="form-control custom-input font-figtree fw-400 color-7"
+                                                    placeholder="Enter your full name" required>
+                                            </div>
 
-                                        <div class="">
-                                            <label class="form-label font-figtree color-6 fw-600">Course Interest
-                                                *</label>
-                                            <select class="form-select custom-input font-figtree fw-400 color-7"
-                                                required>
-                                                <option value="" selected disabled> Select Course</option>
-                                                <option value="hotel-mgmt">Hotel Management</option>
-                                                <option value="culinary">Culinary Arts</option>
-                                            </select>
-                                        </div>
+                                            <div class="">
+                                                <label class="form-label font-figtree color-6 fw-600">Phone Number
+                                                    *</label>
+                                                <input type="tel"
+                                                    class="form-control custom-input font-figtree fw-400 color-7"
+                                                    name="phone" type="tel" inputmode="tel" autocomplete="tel"
+                                                    placeholder="+91 00000 00000" required>
+                                            </div>
 
-                                        <div class="">
-                                            <label class="form-label font-figtree color-6 fw-600">City *</label>
-                                            <input type="text"
-                                                class="form-control custom-input font-figtree fw-400 color-7"
-                                                placeholder="Your city" required>
-                                        </div>
+                                            <div class="">
+                                                <label class="form-label font-figtree color-6 fw-600">Course Interest
+                                                    *</label>
+                                                <select name="course"
+                                                    class="form-select custom-input font-figtree fw-400 color-7"
+                                                    required>
+                                                    <option value="" selected disabled> Select Course</option>
+                                                    <option value="hotel-mgmt">Hotel Management</option>
+                                                    <option value="culinary">Culinary Arts</option>
+                                                </select>
+                                            </div>
 
-                                        <button type="submit"
-                                            class="btn btn-apply text-center color-8 w-100 fw-700 border-radius-8 bg-3 font-montserrat">Apply
-                                            Now</button>
+                                            <div class="">
+                                                <label class="form-label font-figtree color-6 fw-600">City *</label>
+                                                <input type="text"
+                                                    class="form-control custom-input font-figtree fw-400 color-7"
+                                                    placeholder="Your city" name="city" type="text"
+                                                    autocomplete="address-level2" required>
+                                            </div>
+                                            <input name="page_url" type="hidden">
+                                            <button type="submit"
+                                                class="btn btn-apply text-center color-8 w-100 fw-700 border-radius-8 bg-3 font-montserrat">Apply
+                                                Now</button>
 
-                                        <div class="secure-text text-center font-figtree color-9 fw-400">
-                                            <span class="lock-icon">🔒</span> Your information is 100% secure and
-                                            confidential
-                                        </div>
-                                    </form>
+                                            <div class="secure-text text-center font-figtree color-9 fw-400">
+                                                <span class="lock-icon">🔒</span> Your information is 100% secure and
+                                                confidential
+                                            </div>
+                                        </form>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -200,7 +219,8 @@
                         </p>
                         <div class="bg-4 line h-2 w-100"></div>
                         <button class="bg-white box-shadow-1 p-0 border-1 border-color-75 mt-3 mt-md-4">
-                            <div class="bg-2 find-btn text-center color-11 font-barlow fw-700 ls-5 text-uppercase">
+                            <div
+                                class="bg-2 find-btn ls-md-3 text-center color-11 font-barlow fw-700 ls-4 text-uppercase border-0">
                                 Find
                                 Out More</div>
                         </button>
@@ -235,7 +255,7 @@
                     <div class="carousel-wrapper col-12 position-relative">
                         <div class="outer-wrap ">
                             <div id="diplomaCarousel" class="carousel slide" data-bs-ride="carousel"
-                                data-bs-interval="3500">
+                                data-bs-interval="1000">
                                 <div class="carousel-inner">
                                     <div class="carousel-item active">
                                         <div class="program-card row mx-auto align-items-center">
@@ -244,7 +264,7 @@
                                                     class="h-100 w-100 object-fit-cover" />
                                             </div>
                                             <div
-                                                class="card-content col-md-6 highlight program-right d-flex flex-column gap-3">
+                                                class="card-content col-md-6 highlight program-right d-flex flex-column gap-3 justify-content-center">
                                                 <div
                                                     class="program-tag color-12 text-uppercase fw-600 ls--1 font-barlow lh-normal">
                                                     Airport Operations &
@@ -271,43 +291,208 @@
                                                         Assistant
                                                     </li>
                                                 </ul>
+                                                <button
+                                                    class="color-12 btn-program bg-transparent text-uppercase ls-3 d-flex align-items-center justify-content-center w-fit  fw-700 font-barlow text-center ">
+                                                    Proceed to Course <img src="./assets/Vector.webp" alt="">
+                                                </button>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="carousel-item active">
+                                    <div class="carousel-item">
                                         <div class="program-card row mx-auto align-items-center">
                                             <div
-                                                class="card-content col-md-6 highlight program-right d-flex flex-column gap-3">
+                                                class="card-content col-md-6 highlight program-right d-flex flex-column gap-3 justify-content-center">
                                                 <div
                                                     class="program-tag color-12 text-uppercase fw-600 ls--1 font-barlow lh-normal">
-                                                    Airport Operations &
-                                                    Terminal Management</div>
+                                                    Airport Hospitality &
+                                                    Customer Service</div>
                                                 <div class="program-title color-15 font-Barlow fst-italic fw-400 mb-3">
-                                                    "Learn
-                                                    how
-                                                    airports
-                                                    function behind
-                                                    the
-                                                    scenes — from
-                                                    terminal coordination to cargo and warehouse operations."</div>
+                                                    "Build communication, grooming, and passenger handling
+                                                    skills for customer-facing aviation careers."</div>
                                                 <div
                                                     class="program-subtitle color-12 text-uppercase ls-2 fw-700 font-barlow">
                                                     Target
                                                     Designations</div>
                                                 <ul class="program-list d-flex flex-column gap-2">
-                                                    <li class="font-Barlow fw-400 color-16">Airport Terminal Operations
-                                                        Executive
+                                                    <li class="font-Barlow fw-400 color-16">Airline Cabin Crew
                                                     </li>
-                                                    <li class="font-Barlow fw-400 color-16">Airport Warehouse
-                                                        Coordinator</li>
+                                                    <li class="font-Barlow fw-400 color-16">Customer Service Executive
+                                                    </li>
+                                                    <li class="font-Barlow fw-400 color-16">Airline Reservation Agent
+                                                    </li>
+                                                </ul> <button
+                                                    class="color-12 btn-program bg-transparent text-uppercase ls-3 d-flex align-items-center justify-content-center w-fit  fw-700 font-barlow text-center ">
+                                                    Proceed to Course <img src="./assets/Vector.webp" alt="">
+                                                </button>
+                                            </div>
+                                            <div class="card-img-block d-flex align-items-end col-md-6">
+                                                <img src="./assets/Group 6.webp" alt="Airport Operations"
+                                                    class="h-100 w-100 object-fit-cover" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="program-card row mx-auto align-items-center">
+                                            <div class="card-img-block d-flex align-items-end col-md-6">
+                                                <img src="./assets/Group 7.webp" alt="Airport Operations"
+                                                    class="h-100 w-100 object-fit-cover" />
+                                            </div>
+                                            <div
+                                                class="card-content col-md-6 highlight program-right d-flex flex-column gap-3 justify-content-center">
+                                                <div
+                                                    class="program-tag color-12 text-uppercase fw-600 ls--1 font-barlow lh-normal">
+                                                    Air Cargo Operations
+                                                    & Management</div>
+                                                <div class="program-title color-15 font-Barlow fst-italic fw-400 mb-3">
+                                                    "Understand cargo movement, logistics coordination, and
+                                                    airline cargo systems."</div>
+                                                <div
+                                                    class="program-subtitle color-12 text-uppercase ls-2 fw-700 font-barlow">
+                                                    Target
+                                                    Designations</div>
+                                                <ul class="program-list d-flex flex-column gap-2">
                                                     <li class="font-Barlow fw-400 color-16">Airport Cargo Operations
                                                         Assistant
                                                     </li>
+                                                    <li class="font-Barlow fw-400 color-16">Airport Warehouse
+                                                        Coordinator</li>
+                                                    <li class="font-Barlow fw-400 color-16">Airline Flight Load
+                                                        Controller
+                                                    </li>
                                                 </ul>
+                                                <button
+                                                    class="color-12 btn-program bg-transparent text-uppercase ls-3 d-flex align-items-center justify-content-center w-fit  fw-700 font-barlow text-center ">
+                                                    Proceed to Course <img src="./assets/Vector.webp" alt="">
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="program-card row mx-auto align-items-center">
+                                            <div
+                                                class="card-content col-md-6 highlight program-right d-flex flex-column gap-3 justify-content-center">
+                                                <div
+                                                    class="program-tag color-12 text-uppercase fw-600 ls--1 font-barlow lh-normal">
+                                                    Ramp Handling &
+                                                    Ground Support</div>
+                                                <div class="program-title color-15 font-Barlow fst-italic fw-400 mb-3">
+                                                    "Train for ground handling and aircraft support operations
+                                                    that keep airports running smoothly."</div>
+                                                <div
+                                                    class="program-subtitle color-12 text-uppercase ls-2 fw-700 font-barlow">
+                                                    Target
+                                                    Designations</div>
+                                                <ul class="program-list d-flex flex-column gap-2">
+                                                    <li class="font-Barlow fw-400 color-16">Airline Ramp Executive
+                                                    </li>
+                                                    <li class="font-Barlow fw-400 color-16">Ground Support Staff
+                                                    </li>
+                                                </ul> <button
+                                                    class="color-12 btn-program bg-transparent text-uppercase ls-3 d-flex align-items-center justify-content-center w-fit  fw-700 font-barlow text-center ">
+                                                    Proceed to Course <img src="./assets/Vector.webp" alt="">
+                                                </button>
                                             </div>
                                             <div class="card-img-block d-flex align-items-end col-md-6">
-                                                <img src="./assets/Group_5.webp" alt="Airport Operations"
+                                                <img src="./assets/Group 11.webp" alt="Airport Operations"
                                                     class="h-100 w-100 object-fit-cover" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="program-card row mx-auto align-items-center">
+                                            <div class="card-img-block d-flex align-items-end col-md-6">
+                                                <img src="./assets/Group 10.webp" alt="Airport Operations"
+                                                    class="h-100 w-100 object-fit-cover" />
+                                            </div>
+                                            <div
+                                                class="card-content col-md-6 highlight program-right d-flex flex-column gap-3 justify-content-center">
+                                                <div
+                                                    class="program-tag color-12 text-uppercase fw-600 ls--1 font-barlow lh-normal">
+                                                    Aviation Security &
+                                                    Safety</div>
+                                                <div class="program-title color-15 font-Barlow fst-italic fw-400 mb-3">
+                                                    "Learn airport safety procedures, baggage handling, and
+                                                    aviation security operations."</div>
+                                                <div
+                                                    class="program-subtitle color-12 text-uppercase ls-2 fw-700 font-barlow">
+                                                    Target
+                                                    Designations</div>
+                                                <ul class="program-list d-flex flex-column gap-2">
+                                                    <li class="font-Barlow fw-400 color-16">Airline Security Executive
+                                                    </li>
+                                                    <li class="font-Barlow fw-400 color-16">Airport Safety Crew</li>
+                                                    <li class="font-Barlow fw-400 color-16">Airport Safety Crew
+                                                    </li>
+                                                </ul>
+                                                <button
+                                                    class="color-12 btn-program bg-transparent text-uppercase ls-3 d-flex align-items-center justify-content-center w-fit  fw-700 font-barlow text-center ">
+                                                    Proceed to Course <img src="./assets/Vector.webp" alt="">
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="program-card row mx-auto align-items-center">
+                                            <div
+                                                class="card-content col-md-6 highlight program-right d-flex flex-column gap-3 justify-content-center">
+                                                <div
+                                                    class="program-tag color-12 text-uppercase fw-600 ls--1 font-barlow lh-normal">
+                                                    Drone Maintenance
+                                                    & Repair</div>
+                                                <div class="program-title color-15 font-Barlow fst-italic fw-400 mb-3">
+                                                    "Gain practical exposure to drone systems, maintenance,
+                                                    troubleshooting, and repair techniques."</div>
+                                                <div
+                                                    class="program-subtitle color-12 text-uppercase ls-2 fw-700 font-barlow">
+                                                    Target
+                                                    Designations</div>
+                                                <ul class="program-list d-flex flex-column gap-2">
+                                                    <li class="font-Barlow fw-400 color-16">Drone Operator – Multi Rotor
+                                                    </li>
+                                                    <li class="font-Barlow fw-400 color-16">Drone Maintenance & Repair
+                                                        Technician
+                                                    </li>
+                                                </ul> <button
+                                                    class="color-12 btn-program bg-transparent text-uppercase ls-3 d-flex align-items-center justify-content-center w-fit  fw-700 font-barlow text-center ">
+                                                    Proceed to Course <img src="./assets/Vector.webp" alt="">
+                                                </button>
+                                            </div>
+                                            <div class="card-img-block d-flex align-items-end col-md-6">
+                                                <img src="./assets/Group 9.webp" alt="Airport Operations"
+                                                    class="h-100 w-100 object-fit-cover" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="program-card row mx-auto align-items-center">
+                                            <div class="card-img-block d-flex align-items-end col-md-6">
+                                                <img src="./assets/Group 8.webp" alt="Airport Operations"
+                                                    class="h-100 w-100 object-fit-cover" />
+                                            </div>
+                                            <div
+                                                class="card-content col-md-6 highlight program-right d-flex flex-column gap-3 justify-content-center">
+                                                <div
+                                                    class="program-tag color-12 text-uppercase fw-600 ls--1 font-barlow lh-normal">
+                                                    Drone Surveying, GIS &
+                                                    Smart Infrastructure</div>
+                                                <div class="program-title color-15 font-Barlow fst-italic fw-400 mb-3">
+                                                    "Step into the future of surveying and infrastructure
+                                                    technology with advanced drone applications."</div>
+                                                <div
+                                                    class="program-subtitle color-12 text-uppercase ls-2 fw-700 font-barlow">
+                                                    Target
+                                                    Designations</div>
+                                                <ul class="program-list d-flex flex-column gap-2">
+                                                    <li class="font-Barlow fw-400 color-16">Drone Surveying Technician
+                                                    </li>
+                                                    <li class="font-Barlow fw-400 color-16">GIS & Smart Infrastructure
+                                                        Assistant
+                                                    </li>
+                                                </ul>
+                                                <button
+                                                    class="color-12 btn-program bg-transparent text-uppercase ls-3 d-flex align-items-center justify-content-center w-fit  fw-700 font-barlow text-center ">
+                                                    Proceed to Course <img src="./assets/Vector.webp" alt="">
+                                                </button>
                                             </div>
                                         </div>
                                     </div>
@@ -371,6 +556,252 @@
         </div>
     </section>
 
+    <section class="bg-2 ">
+        <div class="py-80 py-md-40 container-fluid">
+            <div class="hero overflow-hidden d-flex align-items-center justify-content-center main-container text-center w-100 position-relative"
+                aria-label="Hero Banner">
+                <div class="container ">
+                    <div class="d-flex flex-column gap-2 gap-md-3">
+                        <p class="hero__eyebrow anim-fade-up text-white font-barlow  fw-700 text-uppercase">
+                            Drone Technology Careers
+                        </p>
+                        <h1
+                            class="hero__title anim-fade-up delay-1 text-white text-center font-barlow fw-900 text-uppercase mb-4">
+                            Drones Are Not Just<br />Flying Cameras.
+                        </h1>
+                        <div class="hero__divider anim-fade-up rounded-2 delay-2 h-4 bg-white max-w-100px mx-auto w-100"
+                            aria-hidden="true">
+                        </div>
+
+                        <p
+                            class="hero__subtitle anim-fade-up delay-2 color-21 text-ceter font-Barlow fw-700 text-uppercase ">
+                            The Future of Smart Careers.
+                        </p>
+                        <p
+                            class="hero__desc color-22 text-center font-Barlow fw-500 anim-fade-up delay-3 max-w-500 mx-auto">
+                            Drone technology is creating new career opportunities across aviation,
+                            surveying, agriculture, and infrastructure. At
+                            <strong class="text-white">Air Divit Udan Academy</strong>,
+                            students prepare for future-ready technical career paths.
+                        </p>
+
+                        <a href="#"
+                            class="mb-5 bg-white d-flex align-items-center justify-content-center text-uppercase ls-2 fw-700 font-barlow color-12 text-decoration-none w-fit mx-auto btn-hero anim-fade-up delay-4 d-flex align-items-center gap-2"
+                            role="button">
+                            <span>Apply Now</span>
+                            <img src="./assets/SVG_1.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="cards-wrapper position-relative" aria-label="Program Categories">
+                <div class="container">
+
+                    <div class="row g-3 g-md-3 align-items-stretch">
+
+                        <!-- Card 1: Drone Operations -->
+                        <div class="col-12 col-sm-6 col-lg-3 d-flex">
+                            <article class="feature-card bg-white p-20px d-flex flex-column gap-2 h-100">
+                                <img src="./assets/SVG_12.webp" width="24px" height="24px" alt="">
+                                <h2 class="feature-card__title mb-0 text-uppercase text-black font-barlow fw-700 ">Drone
+                                    Operations
+                                </h2>
+                                <p class="feature-card__text text-uppercase fw-700 font-Barlow color-23">
+                                    Understand drone handling,
+                                    flying basics and operational
+                                    safety
+                                </p>
+                            </article>
+                        </div>
+
+                        <!-- Card 2: Maintenance & Repair -->
+                        <div class="col-12 col-sm-6 col-lg-3 d-flex">
+                            <article class="feature-card bg-white p-20px d-flex flex-column gap-2 h-100">
+                                <img src="./assets/SVG_13.webp" width="24px" height="24px" alt="">
+                                <h2 class="feature-card__title text-uppercase mb-0  text-black font-barlow fw-700 ">
+                                    Maintenance &amp;
+                                    Repair</h2>
+                                <p class="feature-card__text text-uppercase fw-700 font-Barlow color-23">
+                                    Learn about drone systems,
+                                    troubleshooting, repair
+                                    techniques and maintenance
+                                    workflow.
+                                </p>
+                            </article>
+                        </div>
+
+                        <!-- Card 3: Drone Surveying & GIS -->
+                        <div class="col-12 col-sm-6 col-lg-3 d-flex">
+                            <article class="feature-card bg-white p-20px d-flex flex-column gap-2 h-100">
+                                <img src="./assets/SVG-2.webp" width="24px" height="24px" alt="">
+                                <h2 class="feature-card__title mb-0 text-uppercase text-black font-barlow fw-700 ">Drone
+                                    Surveying
+                                    &amp; GIS</h2>
+                                <p class="feature-card__text text-uppercase fw-700 font-Barlow color-23">
+                                    Explore how drones are
+                                    used in land surveying,
+                                    mapping, infrastructure
+                                    and smart city development
+                                </p>
+                            </article>
+                        </div>
+
+                        <!-- Card 4: Industry Applications -->
+                        <div class="col-12 col-sm-6 col-lg-3 d-flex">
+                            <article class="feature-card bg-white p-20px d-flex flex-column gap-2 h-100">
+                                <img src="./assets/SVG-3.webp" width="24px" height="24px" alt="">
+                                <h2 class="feature-card__title mb-0 text-uppercase text-black font-barlow fw-700 ">
+                                    Industry
+                                    Applications</h2>
+                                <p class="feature-card__text text-uppercase fw-700 font-Barlow color-23">
+                                    Discover drone use in aviation,
+                                    logistics, agriculture, security,
+                                    media and more.
+                                </p>
+                            </article>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pathways">
+        <div class="container-fluid">
+            <div class="container main-container">
+                <div class="row align-items-center ">
+                    <div class="col-12 col-md-6">
+                        <div class="pathway-left max-w-500">
+                            <div class="d-flex gap-2 align-items-center"><span
+                                    class="h-1 bg-2 pathway-span w-100"></span><span
+                                    class="color-18 font-barlow fw-700 pathway-span">Pathways</span>
+                            </div>
+                            <h3 class="text-black font-barlow text-uppercase fw-900 ">Academy to
+                                <span class="color-12"> Industry.</span>
+                            </h3>
+                            <p class="color-20 font-barlow fw-500 ">Prepare for mission-critical roles in the
+                                global tech ecosystem with ADUA.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="d-flex flex-column gap-2 gap-md-3">
+                            <div class="pathway-card bg-white rounded-2 d-flex align-items-center gap-3">
+                                <div class="color-18 opacity-25 font-Barlow fw-700 ">01</div>
+                                <div>
+                                    <span class="color-18 font-barlow fw-700 pathway-span">FLIGHT OPS</span>
+                                    <h5 class="color-19 font-barlow text-uppercase fw-700 pathway-head">Drone Operator –
+                                        Multi Rotor</h5>
+                                </div>
+                            </div>
+                            <div class="pathway-card bg-white rounded-2 d-flex align-items-center gap-3">
+                                <div class="color-18 opacity-25 font-Barlow fw-700 ">02</div>
+                                <div>
+                                    <span class="color-18 font-barlow fw-700 pathway-span">HARDWARE</span>
+                                    <h5 class="color-19 font-barlow text-uppercase fw-700 pathway-head">Maintenance &
+                                        Repair Technician</h5>
+                                </div>
+                            </div>
+                            <div class="pathway-card bg-white rounded-2 d-flex align-items-center gap-3">
+                                <div class="color-18 opacity-25 font-Barlow fw-700 ">03</div>
+                                <div>
+                                    <span class="color-18 font-barlow fw-700 pathway-span">MAPPING</span>
+                                    <h5 class="color-19 font-barlow text-uppercase fw-700 pathway-head">Drone Surveying
+                                        Technician</h5>
+                                </div>
+                            </div>
+                            <div class="pathway-card bg-white rounded-2 d-flex align-items-center gap-3">
+                                <div class="color-18 opacity-25 font-Barlow fw-700 ">04</div>
+                                <div>
+                                    <span class="color-18 font-barlow fw-700 pathway-span">SMART CITIES</span>
+                                    <h5 class="color-19 font-barlow text-uppercase fw-700 pathway-head">GIS &
+                                        Infrastructure Assistant</h5>
+                                </div>
+                            </div>
+                            <div class="pathway-card bg-white rounded-2 d-flex align-items-center gap-3">
+                                <div class="color-18 opacity-25 font-Barlow fw-700 ">05</div>
+                                <div>
+                                    <span class="color-18 font-barlow fw-700 pathway-span">FLEET MGMT</span>
+                                    <h5 class="color-19 font-barlow text-uppercase fw-700 pathway-head">Tech Support
+                                        Assistant</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="support">
+        <div class="container-fluid bg-12">
+            <div class="container main-container gap-50 gap-md-30 d-flex flex-column">
+                <div class="row">
+                    <div class="col-12 col-md-4">
+                        <div class="cta-card d-flex flex-column gap-2 gap-md-3">
+                            <div class="d-flex flex-column gap-2">
+                                <div class="text-white opacity-25 fw-900 font-barlow cta-num">01</div>
+                                <h4 class="text-white font-barlow text-uppercase fw-700 cta-head">High-Growth Industry
+                                </h4>
+                                <div class="bg-13 h-4 cta-border"></div>
+                            </div>
+                            <p class="font-Barlow fw-400 color-17">
+                                Drones are transforming multiple sectors
+                                globally from logistics to defense.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="cta-card d-flex flex-column gap-2 gap-md-3">
+                            <div class="d-flex flex-column gap-2">
+                                <div class="text-white opacity-25 fw-900 font-barlow cta-num">02</div>
+                                <h4 class="text-white font-barlow text-uppercase fw-700 cta-head">Future-Ready Careers
+                                </h4>
+                                <div class="bg-13 h-4 cta-border"></div>
+                            </div>
+                            <p class="font-Barlow fw-400 color-17">
+                                New-age roles with excellent career potential
+                                and high technical specialization.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="cta-card d-flex flex-column gap-2 gap-md-3">
+                            <div class="d-flex flex-column gap-2">
+                                <div class="text-white opacity-25 fw-900 font-barlow cta-num">03</div>
+                                <h4 class="text-white font-barlow text-uppercase fw-700 cta-head">Technology With
+                                    Purpose
+                                </h4>
+                                <div class="bg-13 h-4 cta-border"></div>
+                            </div>
+                            <p class="font-Barlow fw-400 color-17">
+                                Use your skills to build a safer, smarter
+                                world through innovative aerial data.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="cta-para d-flex align-items-center mx-auto flex-column gap-2">
+                        <p class="text-white opacity-50 font-Barlow text-center fw-400 ">
+                            <span class="fw-700 pe-2">
+                                Begin your journey with
+                                Intermediate
+                                programs designed to support your
+                            </span> Start with drone
+                            technology training at ADUA.
+                        </p>
+                        <button
+                            class="d-flex align-items-center bg-transparent gap-2 justify-content-center text-uppercase font-inter text-white text-center border border-white rounded-2 fw-700 cta-btn">Apply
+                            Now
+                            <img src="./assets/Icon.svg" alt=""></button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="whystudents">
         <div class="container-fluid bg-6">
             <div class="container main-container ">
@@ -393,7 +824,7 @@
                     <div class="feature-grid overflow-hidden mx-auto">
                         <div
                             class="feature-item position-relative d-flex flex-column align-items-center text-uppercase text-white overflow-hidden">
-                            <img src="./assets/Why.webp"
+                            <img src="./assets/Why-22.webp"
                                 class="feature-bg-img position-absolute top-0 start-0 h-100 w-100 object-fit-cover opacity-50"
                                 alt="Industry">
                             <div
@@ -417,23 +848,25 @@
                                 alt="Industry"></div>
                             <div
                                 class="feature-content position-relative p-3 z-2 d-flex flex-column justify-content-center h-100 gap-3 gap-md-4">
-                                <div class="icon-box"><img src="./assets/why_SVG.svg" height="32px" width="32px" />
+                                <div class="icon-box"><img src="./assets/Vector.webp" height="32px" width="32px" />
                                 </div>
                                 <div class="d-flex flex-column gap-2">
-                                    <h2 class="mb-0 text-white font-barlow text-uppercase fw-700 mb-2">Real Industry
-                                        Direction
+                                    <h2 class="mb-0 text-white font-barlow text-uppercase fw-700 mb-2">PRACTICAL
+                                        EXPOSURE
                                     </h2>
                                     <span class="bg-white opacity-50 w-100 h-1"></span>
                                 </div>
-                                <p class="mb-0 text-white font-Barlow text-uppercase fw-600 ls-2 ">Programs are
-                                    designed
-                                    around actual industry roles — not generic classroom learning.
+                                <p class="mb-0 text-white font-Barlow text-uppercase fw-600 ls-2 ">THROUGH LIVE
+                                    PROJECTS,
+                                    PRACTICAL LEARNING,
+                                    AND APPLICATION-BASED
+                                    SESSIONS.
                                 </p>
                             </div>
                         </div>
                         <div
                             class="feature-item position-relative d-flex flex-column align-items-center text-uppercase text-white overflow-hidden">
-                            <img src="./assets/Why.webp"
+                            <img src="./assets/Why-21.webp"
                                 class="feature-bg-img position-absolute top-0 start-0 h-100 w-100 object-fit-cover opacity-50"
                                 alt="Industry">
                             <div
@@ -441,14 +874,15 @@
                                 <div class="icon-box"><img src="./assets/why_SVG.svg" height="32px" width="32px" />
                                 </div>
                                 <div class="d-flex flex-column gap-2">
-                                    <h2 class="mb-0 text-white font-barlow text-uppercase fw-700 mb-2">Real Industry
-                                        Direction
+                                    <h2 class="mb-0 text-white font-barlow text-uppercase fw-700 mb-2">Career-Focused
+                                        Approach
                                     </h2>
                                     <span class="bg-white opacity-50 w-100 h-1"></span>
                                 </div>
-                                <p class="mb-0 text-white font-Barlow text-uppercase fw-600 ls-2 ">Programs are
-                                    designed
-                                    around actual industry roles — not generic classroom learning.
+                                <p class="mb-0 text-white font-Barlow text-uppercase fw-600 ls-2 ">From communication
+                                    skills to
+                                    interview preparation, the
+                                    focus stays on job readiness.
                                 </p>
                             </div>
                         </div>
@@ -458,23 +892,25 @@
                                 alt="Industry"></div>
                             <div
                                 class="feature-content position-relative p-3 z-2 d-flex flex-column justify-content-center h-100 gap-3 gap-md-4">
-                                <div class="icon-box"><img src="./assets/why_SVG.svg" height="32px" width="32px" />
+                                <div class="icon-box"><img src="./assets/Vector.webp" height="32px" width="32px" />
                                 </div>
                                 <div class="d-flex flex-column gap-2">
-                                    <h2 class="mb-0 text-white font-barlow text-uppercase fw-700 mb-2">Real Industry
-                                        Direction
+                                    <h2 class="mb-0 text-white font-barlow text-uppercase fw-700 mb-2">FUTURE-READY
+                                        LEARNING
                                     </h2>
                                     <span class="bg-white opacity-50 w-100 h-1"></span>
                                 </div>
-                                <p class="mb-0 text-white font-Barlow text-uppercase fw-600 ls-2 ">Programs are
-                                    designed
-                                    around actual industry roles — not generic classroom learning.
+                                <p class="mb-0 text-white font-Barlow text-uppercase fw-600 ls-2 ">ALONG WITH AVIATION,
+                                    STUDENTS
+                                    ALSO GET EXPOSURE TO GROWING
+                                    SECTORS LIKE DRONE TECHNOLOGY
+                                    AND SMART INFRASTRUCTURE.
                                 </p>
                             </div>
                         </div>
                         <div
                             class="feature-item position-relative d-flex flex-column align-items-center text-uppercase text-white overflow-hidden">
-                            <img src="./assets/Why.webp"
+                            <img src="./assets/Why_20.webp"
                                 class="feature-bg-img position-absolute top-0 start-0 h-100 w-100 object-fit-cover opacity-50"
                                 alt="Industry">
                             <div
@@ -482,14 +918,15 @@
                                 <div class="icon-box"><img src="./assets/why_SVG.svg" height="32px" width="32px" />
                                 </div>
                                 <div class="d-flex flex-column gap-2">
-                                    <h2 class="mb-0 text-white font-barlow text-uppercase fw-700 mb-2">Real Industry
-                                        Direction
+                                    <h2 class="mb-0 text-white font-barlow text-uppercase fw-700 mb-2">Guided By
+                                        Industry
+                                        Understanding
                                     </h2>
                                     <span class="bg-white opacity-50 w-100 h-1"></span>
                                 </div>
-                                <p class="mb-0 text-white font-Barlow text-uppercase fw-600 ls-2 ">Programs are
-                                    designed
-                                    around actual industry roles — not generic classroom learning.
+                                <p class="mb-0 text-white font-Barlow text-uppercase fw-600 ls-2 ">Learn with structured
+                                    mentorship and industry
+                                    oriented training methods.
                                 </p>
                             </div>
                         </div>
@@ -499,17 +936,18 @@
                                 alt="Industry"></div>
                             <div
                                 class="feature-content position-relative p-3 z-2 d-flex flex-column justify-content-center h-100 gap-3 gap-md-4">
-                                <div class="icon-box"><img src="./assets/why_SVG.svg" height="32px" width="32px" />
+                                <div class="icon-box"><img src="./assets/Vector.webp" height="32px" width="32px" />
                                 </div>
                                 <div class="d-flex flex-column gap-2">
-                                    <h2 class="mb-0 text-white font-barlow text-uppercase fw-700 mb-2">Real Industry
-                                        Direction
+                                    <h2 class="mb-0 text-white font-barlow text-uppercase fw-700 mb-2">PLACEMENT
+                                        ASSISTANCE
                                     </h2>
                                     <span class="bg-white opacity-50 w-100 h-1"></span>
                                 </div>
-                                <p class="mb-0 text-white font-Barlow text-uppercase fw-600 ls-2 ">Programs are
-                                    designed
-                                    around actual industry roles — not generic classroom learning.
+                                <p class="mb-0 text-white font-Barlow text-uppercase fw-600 ls-2 ">SUPPORT FOR CAMPUS
+                                    OPPORTUNITIES,
+                                    PREPARATION, AND
+                                    PROFESSIONAL READINESS.
                                 </p>
                             </div>
                         </div>
@@ -530,7 +968,8 @@
                         <h2 class="mb-0 text-white font-barlow fst-italic fw-700 text-uppercase career-head">MULTIPLE
                             CAREER
                             OPPORTUNITIES.</h2>
-                        <p class="text-white font-Barlow fw-600 text-uppercase ls-4 career-para">After completing your
+                        <p class="text-white font-Barlow fw-600 text-uppercase ls-4 career-para ls-md-3">After
+                            completing your
                             diploma
                             program,
                             opportunities can open across</p>
@@ -612,9 +1051,9 @@
     <section>
         <div class="container-fluid bg-11">
             <div class="container main-container">
-                <div class="row align-items-center">
+                <div class="row g-4 align-items-center">
                     <div class="col-12 col-md-6">
-                        <div class="consultor-left d-flex flex-column gap-3">
+                        <div class="consultor-left d-flex flex-column gap-2 gap-md-3">
                             <div
                                 class="d-flex gap-2 align-items-center justify-content-center airline-badge color-12 w-fit text-center font-Barlow text-uppercase ls-3 fw-600">
                                 <div
@@ -625,14 +1064,17 @@
                             <h2 class="font-barlow fw-600 text-uppercase color-12 apply-head fst-italic">STILL
                                 <span class="color-11">CONFUSED? </span>START HERE.
                             </h2>
-                            <ul class="list-unstyled d-flex flex-column gap-2">
-                                <li class="color-15 font-Barlow fst-italic fw-400 confused-list"><img
-                                        src="./assets/Background.svg" alt=""> A lot of students don't
+                            <ul class="list-unstyled d-flex flex-column gap-3">
+                                <li
+                                    class="color-15 font-Barlow fst-italic fw-400 confused-list d-flex align-items-center gap-2">
+                                    <img src="./assets/Background.svg" alt=""> A lot of students don't
                                     have it all
                                     figured
-                                    out on Day 1.</li>
-                                <li class="color-15 font-Barlow fst-italic fw-400 confused-list"><img
-                                        src="./assets/Background (1).svg" alt=""> That's actually the
+                                    out on Day 1.
+                                </li>
+                                <li
+                                    class="color-15 font-Barlow fst-italic fw-400 confused-list d-flex align-items-center gap-2">
+                                    <img src="./assets/Background (1).svg" alt=""> That's actually the
                                     best place to
                                     start.
                                 </li>
@@ -642,10 +1084,11 @@
                     <div class="col-12 col-md-6">
                         <div class="card-box border-radius-8 d-flex flex-column gap-3">
 
-                            <div class="main-heading color-12 font-barlow fw-700 text-uppercase ls-3 pb-4">Here's The
+                            <div class="main-heading color-12 font-barlow fw-700 text-uppercase ls-3 pb-md-4 pb-3">
+                                Here's The
                                 Good
                                 Part.</div>
-                            <div class="d-flex flex-column gap-4 py-4">
+                            <div class="d-flex flex-column gap-4 py-md-4 py-2">
                                 <div class="feature-item-2 d-flex align-items-start">
                                     <div
                                         class="step-circle d-flex align-items-center justify-content-center px-3 py-2 bg-2 rounded-circle text-white fw-700 font-consolas">
@@ -698,7 +1141,7 @@
                             </div>
 
                             <!-- Buttons -->
-                            <div class="btn-row d-flex flex-wrap flex-md-nowrap gap-4 pt-4">
+                            <div class="btn-row d-flex flex-nowrap gap-4 pt-md-4 pt-3">
                                 <button
                                     class="btn-consult bg-2 text-white text-center font-barlow fw-700 text-uppercase ls-3 w-100 border-0">Consult
                                     Counselor</button>
@@ -732,7 +1175,7 @@
                     <div class="row g-4 justify-content-center ">
                         <div
                             class="col-lg-3 col-md-6 arrow-container d-flex align-items-center justify-content-center position-relative">
-                            <div class="career-card p-2 w-100 h-100"
+                            <div class="career-card p-2 w-100 h-100 d-flex align-items-center justify-content-center align-items-md-start justify-content-md-start"
                                 style="background: url(./assets/Mask-Group.webp) center/contain no-repeat;">
                                 <div
                                     class="arrow-card box-shadow-1 bg-white border-radius-8 color-12 font-barlow fw-700 text-uppercase ls-1 text-center">
@@ -742,7 +1185,7 @@
                         </div>
                         <div
                             class="col-lg-3 col-md-6 arrow-container d-flex align-items-center justify-content-center position-relative">
-                            <div class="career-card p-2 w-100 h-100"
+                            <div class="career-card p-2 w-100 h-100 d-flex align-items-center justify-content-center align-items-md-start justify-content-md-start"
                                 style="background: url(./assets/Mask-Group-1.webp) center/contain no-repeat;">
                                 <div
                                     class="arrow-card box-shadow-1 bg-white border-radius-8 color-12 font-barlow fw-700 text-uppercase ls-1 text-center">
@@ -752,7 +1195,7 @@
                         </div>
                         <div
                             class="col-lg-3 col-md-6 arrow-container d-flex align-items-center justify-content-center position-relative">
-                            <div class="career-card p-2 w-100 h-100"
+                            <div class="career-card p-2 w-100 h-100 d-flex align-items-center justify-content-center align-items-md-start justify-content-md-start"
                                 style="background: url(./assets/Mask-Group-2.webp) center/contain no-repeat;">
                                 <div
                                     class="arrow-card box-shadow-1 bg-white border-radius-8 color-12 font-barlow fw-700 text-uppercase ls-1 text-center">
@@ -762,7 +1205,7 @@
                         </div>
                         <div
                             class="col-lg-3 col-md-6 arrow-container d-flex align-items-center justify-content-center position-relative">
-                            <div class="career-card p-2 w-100 h-100"
+                            <div class="career-card p-2 w-100 h-100 d-flex align-items-center justify-content-center align-items-md-start justify-content-md-start"
                                 style="background: url(./assets/Mask-Group.webp) center/contain no-repeat;">
                                 <div
                                     class="arrow-card box-shadow-1 bg-white border-radius-8 color-12 font-barlow fw-700 text-uppercase ls-1 text-center">
@@ -877,10 +1320,11 @@
 
     <section class="container-fluid bg-9">
         <div class="container">
-            <div class="row align-items-stretch">
+            <div class="row align-items-stretch pb-3">
                 <div class="col-lg-4 main-container d-flex">
-                    <div class="hero-text h-100 d-flex flex-column gap-3">
-                        <h6 class="color-11 font-Barlow fw-600 text-uppercase ls-4 mb-2">Future-Ready Enrollment</h6>
+                    <div class="hero-text h-100 d-flex flex-column gap-2 gap-md-3">
+                        <h6 class="color-11 font-Barlow fw-600 text-uppercase ls-4 ls-md-3  mb-2">Future-Ready
+                            Enrollment</h6>
                         <h2 class="text-white font-barlow fst-italic fw-600 text-uppercase step-head mb-3">YOUR CAREER
                             <span class="color-11 "> WON'T BUILD</span>
                             ITSELF.
@@ -909,24 +1353,24 @@
                             Open For
                             2025</button>
                         <a href="#"
-                            class="btn-white bg-white rounded-1 color-12 fw-700 text-uppercase fst-italic font-barlow text-decoration-none">Apply
+                            class="btn-white bg-white rounded-1 color-12 fw-700 text-uppercase fst-italic font-barlow text-decoration-none w-fit">Apply
                             Now & Take
                             The First Step <img src="./assets/SVG.webp" class="h-100 w-100 object-fit-cover ms-2"
                                 alt=""></a>
                     </div>
                 </div>
                 <div class="col-lg-8 d-flex">
-                    <div class="slanted-gallery d-flex h-100">
-                        <div class="gallery-item overflow-hidden position-relative  highlight h-100">
-                            <img src="../assets/image_2752.webp" class="h-100 object-fit-cover" alt="Pilot">
+                    <div class="slanted-gallery d-flex h-100 ">
+                        <div class="gallery-item overflow-hidden position-relative highlight h-100 order-1">
+                            <img src="./assets/Rectangle 8.webp" class="h-100 object-fit-cover" alt="Pilot">
                         </div>
-                        <div class="gallery-item overflow-hidden position-relative h-100">
+                        <div class="gallery-item overflow-hidden position-relative h-100  ">
                             <video class="w-100 h-100 object-fit-cover" autoplay muted loop playsinline>
                                 <source src="./assets/video.mp4" type="video/mp4">
                             </video>
                         </div>
-                        <div class="gallery-item overflow-hidden position-relative  h-100">
-                            <img src="../assets/image_2754.webp" class="h-100 object-fit-cover" alt="Private Jet">
+                        <div class="gallery-item overflow-hidden position-relative  h-100 ">
+                            <img src="./assets/Rectangle 10.webp" class="h-100 object-fit-cover" alt="Private Jet">
                         </div>
                     </div>
                 </div>
@@ -949,19 +1393,40 @@
                         </div>
                         <h6 class="text-white text-center font-barlow fw-400 footer-head">Chitrakoot, Madhya Pradesh
                         </h6>
-                        <div
-                            class="d-flex flex-wrap gap-3 gap-md-5 mb-3 align-items-center justify-content-center mb-md-4 ">
-                            <div class="text-white font-inter fw-500 footer-contact">
-                                <img src="./assets/Icon.webp" width="16px" height="16px" alt="">
-                                +91 98765 43210
+                        <div class="contact-grid gap-4 align-items-center footer-location">
+                            <div class="d-flex justify-content-md-center">
+                                <div class="gap-3 gap-md-4 mb-0 mb-md-4 d-flex flex-column ">
+                                    <div class="text-white font-barlow fw-400 footer-contact text-start">
+                                        <img src="./assets/Icon.webp" width="16px" height="16px" alt="">
+                                        +91 98765 43210
+                                    </div>
+                                    <div class="text-white font-barlow fw-400 footer-contact text-start">
+                                        <img src="./assets/sms.webp" width="20px" height="20px" alt="">
+                                        info@airdivitudan.com
+                                    </div>
+                                </div>
                             </div>
-                            <div class="text-white font-inter fw-500 footer-contact">
-                                <img src="./assets/sms.webp" width="20px" height="20px" alt="">
-                                info@airdivitudan.com
+                            <div class="gap-3 gap-md-4 mb-3 mb-md-4 d-flex flex-column">
+                                <div
+                                    class="text-white font-barlow fw-500 footer-contact d-flex flex-column gap-2 footer-location ">
+                                    <div class="text-white font-barlow fw-700 footer-contact ls-1 text-start">
+                                        <img src="./assets/LocationSVG.webp" width="20px" height="20px" alt="">
+                                        Office Address :
+                                    </div>
+                                    <p class="text-white font-inter fw-400 text-start contact-para mb-2">
+                                        For Satna HO: AIRDIVIT UDAN ACADEMY
+                                        PRIVATE LIMITED 69, MASTER PLAN, CIVIL
+                                        LINES SATNA, MP 485001, India
+                                    </p>
+                                </div>
+                                <div class="text-white font-barlow fw-400 footer-contact text-start">
+                                    <img src="./assets/LocationSVG.webp" width="20px" height="20px" alt="">
+                                    MGCG University, Chitrakoot
+                                </div>
                             </div>
                         </div>
                         <div class="seperator w-100"></div>
-                        <div class="d-flex flex-column align-items-center justify-content-center gap-1">
+                        <div class="d-flex flex-column align-items-center justify-content-center gap-2">
                             <p class="mb-0 font-Barlow fw-500 text-center color-10  footer-copyright">© 2026 ADU
                                 Academy.
                                 All rights
@@ -1015,6 +1480,62 @@
 
         });
     </script>
+    <script>
+        var GOOGLE_SHEETS_WEBAPP_URL =
+            "https://script.google.com/macros/s/AKfycbwJZ2GdU_DlWQ-HSxQ5gEIYnvONPhaBAZ2kt4jMdrT0UvP3qSeFS_11MBAjJdopBUqx/exec";
+
+        var THANK_YOU_URL = "";
+        document.querySelectorAll("[data-apply-form]").forEach(function (form) {
+
+            form.addEventListener("submit", async function (e) {
+
+                e.preventDefault();
+
+                const submitBtn = form.querySelector('button[type="submit"]');
+
+                submitBtn.disabled = true;
+                submitBtn.innerText = "Submitting...";
+
+                // Set page URL
+                form.querySelector('input[name="page_url"]').value = window.location.href;
+
+                // Payload
+                const payload = {
+                    name: form.querySelector('[name="name"]').value,
+                    phone: form.querySelector('[name="phone"]').value,
+                    course: form.querySelector('[name="course"]').value,
+                    city: form.querySelector('[name="city"]').value,
+                    page_url: form.querySelector('[name="page_url"]').value,
+                };
+
+                try {
+
+                    await fetch(GOOGLE_SHEETS_WEBAPP_URL, {
+                        method: "POST",
+                        mode: "no-cors",
+                        headers: {
+                            "Content-Type": "application/json"
+                        },
+                        body: JSON.stringify(payload)
+                    });
+
+                    console.log("Form submitted successfully!");
+
+                    form.reset();
+
+                } catch (error) {
+
+                    console.log(error);
+
+                    console.error("Something went wrong");
+                }
+
+                submitBtn.disabled = false;
+                submitBtn.innerText = "Apply Now";
+
+            });
+
+        }); 
     </script>
     <script src="js/script.js"></script>
 </body>
