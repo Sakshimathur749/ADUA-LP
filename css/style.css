@@ -1,6 +1,27 @@
 body {
     font-family: "Barlow Condensed", "Barlow", sans-serif;
-    overflow-x: hidden !important;
+}
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img,
+video {
+    max-width: 100%;
+}
+
+.slanted-gallery {
+    min-width: 0;
+}
+
+.gallery-item {
+    min-width: 0;
 }
 
 @font-face {
