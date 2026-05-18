@@ -218,4 +218,10 @@
         order: 3;
         grid-column: span 2;
     }
+
+    .carousel-control-next,
+    .carousel-control-prev {
+        bottom: 25px !important;
+        width: 9% !important;
+    }
 }
